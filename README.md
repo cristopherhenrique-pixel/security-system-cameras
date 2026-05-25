@@ -9,19 +9,13 @@ gap = espaçamento
 -->
 
 <div align="center">
-<img src="imagens/Sem título.png" width="400">
+<img src="imagens/Sem título.png" width="600">
 <table>
 <tr>
 
-<td><img src="imagens/Sem título.png" width="220"></td>
 <td><img src="imagens/Captura de tela 2026-05-25 120035.png" width="220"></td>
 <td><img src="imagens/Captura de tela 2026-05-25 120045.png" width="220"></td>
 <td><img src="imagens/Captura de tela 2026-05-25 120056.png" width="220"></td>
-
-</tr>
-
-<tr>
-
 <td><img src="imagens/Captura de tela 2026-05-25 120104.png" width="220"></td>
 <td><img src="imagens/Captura de tela 2026-05-25 120112.png" width="220"></td>
 
@@ -34,7 +28,7 @@ gap = espaçamento
 
 # 🛡️ V7 SECURITY SYSTEM
 
-### Sistema Avançado de Monitoramento Inteligente  
+### Sistema Avançado de Monitoramento Inteligente para 4 câmeras 
 ### Computer Vision • YOLOv8 • IA Local • Telegram Alerts
 
 <br>
@@ -183,22 +177,194 @@ O sistema captura janelas específicas de softwares de câmeras (Yoosee, DVR, NV
 
 ---
 
-# ⚙️ COMO USAR
+<div align="center">
+
+# 🛡️ V7 SECURITY SYSTEM
+
+### Advanced Intelligent Video Monitoring Suite  
+### Computer Vision • YOLOv8 • Local AI • Telegram Alerts
+
+<br>
+
+<img src="imagens/Sem título.png" width="900">
+
+</div>
+
+---
+
+# 📌 APPLICATION SUMMARY
+
+The **V7 Security System** is an advanced AI-powered video monitoring suite designed for:
+
+- 🧠 Artificial Intelligence
+- 👁️ Computer Vision
+- 🔥 Smart Event Detection
+- 📡 Automated Alert Systems
+- 🎯 Real-Time Object Tracking
+
+The system captures specific windows from surveillance software such as:
+
+- Yoosee
+- DVR/NVR Systems
+- CMS Platforms
+- IP Camera Software
+
+It processes frames in real time, detects critical events, and automatically sends intelligent alerts.
+
+---
+
+# 🚀 MAIN FEATURES
+
+<br>
+
+<table align="center" width="100%">
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h1>🎥 1. Smart Window Capture</h1>
+
+✔️ Captures specific windows by title <br>
+✔️ No physical webcam required <br>
+✔️ Compatible with NVR/DVR software <br>
+✔️ ROI (Region of Interest) support <br>
+✔️ Focus analysis on selected areas
+
+</td>
+
+<td width="50%" valign="top">
+
+<h1>⚡ 2. Advanced Motion Detection</h1>
+
+✔️ Background subtraction algorithm <br>
+✔️ Real-time pixel change detection <br>
+✔️ Noise filtering system <br>
+✔️ Rain and small animal filtering <br>
+✔️ Adjustable sensitivity threshold
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h1>🔺 3. Risk Zones (Polygons)</h1>
+
+✔️ Custom polygon drawing <br>
+✔️ Configurable critical areas <br>
+✔️ Smart intrusion detection <br>
+✔️ Separate risk-area alerts <br>
+✔️ Selective monitoring system
+
+</td>
+
+<td width="50%" valign="top">
+
+<h1>🤖 4. Artificial Intelligence (YOLOv8)</h1>
+
+✔️ Human detection <br>
+✔️ Vehicle and motorcycle detection <br>
+✔️ Fire and smoke detection <br>
+✔️ Real-time object tracking <br>
+✔️ AI-powered visual analysis
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h1>🧠 5. LLM Vision Integration</h1>
+
+✔️ Compatible with LM Studio <br>
+✔️ Local Vision AI support <br>
+✔️ Automatic scene description <br>
+✔️ Smart contextual analysis
+
+<br>
+
+<b>Example:</b>
+
+> "A man wearing a blue shirt is attempting to open the gate."
+
+</td>
+
+<td width="50%" valign="top">
+
+<h1>🎬 6. Automated Recording System</h1>
+
+✔️ Motion-triggered recording <br>
+✔️ Configurable persistence time <br>
+✔️ MP4 and AVI support <br>
+✔️ H264 / AVC1 codecs <br>
+✔️ Optional AI overlay recording
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h1>📲 7. Telegram Alert System</h1>
+
+✔️ Multiple Telegram Bots <br>
+✔️ Automatic image sending <br>
+✔️ AI-generated captions <br>
+✔️ Intelligent crop system <br>
+✔️ Fast mobile visualization
+
+</td>
+
+<td width="50%" valign="top">
+
+<h1>🖥️ 8. GUI Configuration Panel</h1>
+
+✔️ Full Tkinter interface <br>
+✔️ No code editing required <br>
+✔️ CPU/RAM/FPS monitoring <br>
+✔️ Real-time telemetry <br>
+✔️ Easy parameter configuration
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+# 🧹 9. AUTOMATIC MAINTENANCE
+
+✔️ Automatic deletion of old recordings <br>
+✔️ Old log cleanup system <br>
+✔️ User-defined retention period <br>
+✔️ Automatic storage organization
+
+---
+
+# ⚙️ HOW TO USE
 
 ```bash
-1. Execute config_gui.py
+1. Run config_gui.py
 
-2. Selecione a janela da câmera
+2. Select the camera/software window
 
 3. Configure:
-   - Sensibilidade
-   - IA
-   - Telegram
-   - Zonas de risco
+   - Motion sensitivity
+   - AI modules
+   - Telegram alerts
+   - Risk zones
 
-4. Ative o monitoramento
+4. Start monitoring
 
-5. Os vídeos serão salvos em:
-   /gravacoes
+5. Recordings will be saved in:
+   /recordings
 
-6. Alertas serão enviados automaticamente
+6. Alerts will be sent automatically
