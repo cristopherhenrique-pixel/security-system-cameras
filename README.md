@@ -1,3 +1,6 @@
 # security-system-cameras
 security system for 4 cameras
-(Sem título.png)
+()
+<p align="center">
+  <img src="Sem título.png" width="700">
+</p>
