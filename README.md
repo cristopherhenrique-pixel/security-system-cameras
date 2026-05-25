@@ -1,24 +1,34 @@
 # security-system-cameras
 security system for 4 cameras
 ()
-<p align="center">
-  <img src="imagens/Sem título.png" width="700">
-</p>
-<p align="center">
-  <img src="imagens/Captura de tela 2026-05-25 120035.png" width="700">
-</p>
-<p align="center">
-  <img src="imagens/Captura de tela 2026-05-25 120045.png" width="700">
-</p>
-<p align="center">
-  <img src="imagens/Captura de tela 2026-05-25 120056.png" width="700">
-</p>
-<p align="center">
-  <img src="imagens/Captura de tela 2026-05-25 120104.png" width="700">
-</p>
-<p align="center">
-  <img src="imagens/Captura de tela 2026-05-25 120112.png" width="700">
-</p>
+<!-- CONFIGURAÇÃO -->
+<!-- 
+cols = quantidade de colunas
+size = largura das imagens
+gap = espaçamento
+-->
+
+<div align="center">
+
+<table>
+<tr>
+
+<td><img src="imagens/Sem título.png" width="220"></td>
+<td><img src="imagens/Captura de tela 2026-05-25 120035.png" width="220"></td>
+<td><img src="imagens/Captura de tela 2026-05-25 120045.png" width="220"></td>
+<td><img src="imagens/Captura de tela 2026-05-25 120056.png" width="220"></td>
+
+</tr>
+
+<tr>
+
+<td><img src="imagens/Captura de tela 2026-05-25 120104.png" width="220"></td>
+<td><img src="imagens/Captura de tela 2026-05-25 120112.png" width="220"></td>
+
+</tr>
+</table>
+
+</div>
 =========================================================
 SISTEMA DE SEGURANÇA V7 - DOCUMENTAÇÃO TÉCNICA
 =========================================================
