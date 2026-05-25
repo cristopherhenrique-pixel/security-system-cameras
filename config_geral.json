@@ -1,0 +1,186 @@
+{
+    "setup_feito": true,
+    "pular_menu": false,
+    "telegram": {
+        "ativo": false,
+        "intervalo_envio": 5,
+        "alertar_risco": false,
+        "alertar_geral": true,
+        "enviar_crop_roi": false,
+        "slot": 1,
+        "silent_mode": false,
+        "token": "12345678",
+        "chat_id": "12345678"
+    },
+    "telegram_bot2": {
+        "ativo": true,
+        "alertar_risco": true,
+        "alertar_geral": false,
+        "intervalo_envio": 5,
+        "enviar_crop_roi": true,
+        "slot": 4,
+        "silent_mode": false,
+        "token": "12345678",
+        "chat_id": "12345678"
+    },
+    "ia": {
+        "url": "http://127.0.0.1:1234/v1/chat/completions",
+        "model_name": "local-model",
+        "system_prompt": "Você é um especialista em monitoramento residencial analisando uma grade 2x2 de câmeras. Setor 1 (Superior Esq): Rua em frente à casa. Setor 2 (Superior Dir): Sala com sofá e mesa. Setor 3 (Inferior Esq): Cozinha com fogão a lenha, banco e lixeira. Setor 4 (Inferior Dir): Vazio/Referência (IGNORE ESTE SETOR). Para os setores 1, 2 e 3, forneça descrições narrativas, criativas e ricas em detalhes sobre ações, objetos e pessoas para fins de log de treinamento. Formato obrigatório: 'Setor X: [Descrição Detalhada e Contextual] | [Resumo de 5 palavras]'. Sem emojis, sem introduções.",
+        "ativo": false,
+        "temperature": 0.2
+    },
+    "arquivos": {
+        "pasta_gravacoes": "D:/GRAVACOES",
+        "salvar_texto": true,
+        "salvar_imagem": false,
+        "salvar_video": true,
+        "video_output_format": "mp4",
+        "limpeza_dias": 0,
+        "video_codec": "mp4v"
+    },
+    "deteccao": {
+        "fps_limit": 10,
+        "blur": 5,
+        "threshold": 60,
+        "sens_global": 3000,
+        "titulo_janela": "Yoosee",
+        "roi": {
+            "x": 18,
+            "y": 27,
+            "w": 1882,
+            "h": 1053
+        },
+        "background_path": "",
+        "area_minima": 200,
+        "skip_yolo": 2,
+        "usar_yolo": false,
+        "tempo_sem_movimento": 6,
+        "resize_scale_yolo": 0.5,
+        "display_resize_scale": 0.7,
+        "polygon_close_distance": 15,
+        "yolo_confidence_threshold": 0.4,
+        "geral_px_gatilho": 4000,
+        "geral_tempo_gatilho": 2.0,
+        "risco_px_gatilho": 500,
+        "risco_tempo_gatilho": 1.0,
+        "usar_fogo_fumaca": false,
+        "classes_ia": {
+            "person": [
+                255,
+                0,
+                0
+            ],
+            "car": [
+                255,
+                128,
+                0
+            ],
+            "truck": [
+                255,
+                128,
+                0
+            ],
+            "bus": [
+                255,
+                128,
+                0
+            ],
+            "motorcycle": [
+                255,
+                128,
+                0
+            ],
+            "fire": [
+                0,
+                0,
+                255
+            ],
+            "fogo": [
+                0,
+                0,
+                255
+            ],
+            "smoke": [
+                0,
+                165,
+                255
+            ],
+            "fumaça": [
+                0,
+                165,
+                255
+            ]
+        },
+        "mensagens_ui": {
+            "logica_geral": "* Mov. Restante > {}s: Grava Video",
+            "logica_risco": "* Mov. Area Risco > {}s: Alerta TG",
+            "setor1_info": "* Setor 1: Analise Fogo/Fumaca Ativa",
+            "comandos": "Comandos - R:Rec I:Img A:IA T:TG K:Area M:Teste F:Fogo Y:Yolo V:Janela Q:Sair",
+            "gatilho_risco": "Gatilho Risco: >{}px | >{}s",
+            "gatilho_geral": "Gatilho Geral: >{}px | >{}s",
+            "mov_geral": "Mov. Geral Atual: {}",
+            "modo_teste": "Modo Teste (Sobreposicao): {}",
+            "yolo_status": "Detecção YOLO (IA): {}"
+        },
+        "modo_teste": false,
+        "yolo_main_model_path": "yolov8n.pt",
+        "risk_areas": [
+            [
+                [
+                    1208,
+                    543
+                ],
+                [
+                    1821,
+                    548
+                ],
+                [
+                    1709,
+                    1051
+                ],
+                [
+                    1298,
+                    1051
+                ],
+                [
+                    1383,
+                    875
+                ],
+                [
+                    1705,
+                    960
+                ],
+                [
+                    1751,
+                    684
+                ],
+                [
+                    1206,
+                    571
+                ]
+            ]
+        ],
+        "usar_areas_risco": true,
+        "desenhar_overlays_video": false,
+        "window_pos": [
+            2490,
+            -4
+        ],
+        "solicitar_reconfiguracao_risco": false,
+        "gravar_geral": true,
+        "gravar_risco": true,
+        "solicitar_reconfiguracao_window": false,
+        "min_contour_area": 150,
+        "dilate_iterations": 2,
+        "max_video_duration": 30,
+        "detection_cooldown_seconds": 4,
+        "yolo_allowed_classes": []
+    },
+    "gravando_atualmente": false,
+    "ultimo_alerta": {
+        "timestamp": "12:21:19",
+        "tipo": "Área de Risco"
+    },
+    "gui_geometry": "594x902+35+45"
+}

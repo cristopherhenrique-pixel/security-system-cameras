@@ -1,0 +1,8 @@
+opencv-python
+numpy
+pygetwindow
+Pillow
+requests
+ultralytics
+psutil
+pywin32

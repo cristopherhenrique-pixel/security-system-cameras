@@ -1,0 +1,57 @@
+=========================================================
+SISTEMA DE SEGURANÇA V7 - DOCUMENTAÇÃO TÉCNICA
+=========================================================
+
+RESUMO DO APLICATIVO:
+Este sistema é uma suíte avançada de monitoramento de vídeo baseada em Visão Computacional e Inteligência Artificial. Ele foi projetado para capturar janelas específicas de softwares de câmeras (como Yoosee, NVRs, etc.), processar o movimento em tempo real, identificar objetos críticos e enviar alertas inteligentes.
+
+PRINCIPAIS FUNCIONALIDADES:
+
+1. Captura Inteligente de Janela:
+   - Monitora janelas específicas pelo título, permitindo que o sistema funcione sem depender de uma webcam física, capturando diretamente a interface de outros softwares.
+   - Suporte a ROI (Region of Interest): Permite focar a análise apenas em uma área específica da imagem.
+
+2. Detecção de Movimento Evoluída:
+   - Algoritmo de subtração de fundo para detectar mudanças de pixels.
+   - Filtros de ruído (dilação e área mínima) para evitar alarmes falsos com pequenos animais ou chuva.
+   - Configuração de sensibilidade (Threshold) ajustável via interface.
+
+3. Zonas de Risco (Polígonos):
+   - Permite ao usuário desenhar áreas personalizadas na tela.
+   - Detecção diferenciada: O sistema diferencia movimento "geral" de invasões em "áreas de risco".
+
+4. Inteligência Artificial (YOLOv8):
+   - Reconhecimento de Objetos: Identifica pessoas, carros, motos e outros.
+   - Detecção de Fogo e Fumaça: Módulo especializado para identificar princípios de incêndio.
+   - Tracking: Acompanha os objetos detectados entre os quadros.
+
+5. Integração com LLM (IA de Visão Local):
+   - Conexão com servidores locais (como LM Studio).
+   - Ao detectar um evento, o sistema envia a imagem para uma IA que descreve detalhadamente o que está acontecendo (Ex: "Um homem de camisa azul está tentando abrir o portão").
+
+6. Sistema de Gravação Automatizado:
+   - Gravação disparada por movimento com tempo de persistência configurável.
+   - Suporte a formatos MP4 e AVI com escolha de codecs (H.264/AVC1).
+   - Opção de gravar o vídeo "limpo" ou com os desenhos da IA (overlays).
+
+7. Alertas via Telegram:
+   - Suporte a múltiplos Bots (Principal e Auxiliar).
+   - Envio de fotos com legendas geradas pela IA.
+   - Função "Crop": Envia apenas o quadrante onde o movimento foi detectado para facilitar a visualização rápida no celular.
+
+8. Interface de Configuração (GUI):
+   - Painel completo em Tkinter para ajuste de todos os parâmetros sem precisar editar o código.
+   - Telemetria em tempo real: Monitoramento de uso de CPU, RAM, FPS e contagem de pixels de movimento.
+
+9. Manutenção Automática:
+   - Limpeza automática de arquivos antigos (vídeos e logs) após um número de dias definido pelo usuário.
+
+COMO USAR:
+1. Execute o 'config_gui.py' para ajustar as configurações e selecionar a janela da câmera.
+2. Desenhe as áreas de risco se necessário.
+3. Ative o monitoramento.
+4. Os vídeos serão salvos na pasta 'gravacoes' e os alertas enviados para os Chat IDs configurados.
+
+=========================================================
+Desenvolvido com Python, OpenCV e Ultralytics.
+=========================================================

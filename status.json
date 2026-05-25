@@ -1,0 +1,18 @@
+{
+    "gravando_atualmente": false,
+    "ultimo_alerta": {
+        "timestamp": "11:38:47",
+        "tipo": "Movimento Geral"
+    },
+    "telemetria": {
+        "px_fora": 120,
+        "px_risco": 0,
+        "tm_geral": 0,
+        "tm_risco": 0,
+        "fps": "44.6",
+        "cpu": 4.8,
+        "ram": 45.0,
+        "vids": 5,
+        "alertas": 8
+    }
+}
